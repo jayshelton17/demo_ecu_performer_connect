@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Sleek Modern Imperial ECU Purple & Gold */
+    --ecu-purple: #4C1D95;
+    --ecu-purple-dark: #2E1065;
+    --ecu-purple-hover: #5B21B6;
+    --ecu-purple-light: #6D28D9;
+    --ecu-purple-subtle: #EDE9FE;
+    --ecu-gold: #FEC524;
+    --ecu-gold-hover: #E5B01D;
+    --ecu-gold-muted: #FFF4D0;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1f2937;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom scrollbars for modals and message threads */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(76, 29, 149, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(76, 29, 149, 0.5);
+}

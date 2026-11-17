@@ -1,0 +1,6 @@
+{
+  "name": "ECU Performer Connect",
+  "description": "The official casting, audition, and performer network for East Carolina University theatre, film, and dance talent and directors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
