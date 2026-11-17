@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --base=/demo-ecu-performer-connect/
+        run: npm run build -- --base=/jayshelton17/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
